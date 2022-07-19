@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+
+    <style>
+      :root {
+        --base-font-color: rgb(131,148,150);
+        --secondary-font-color: rgb(88,110,117);
+        --emphasised-font: rgb(147,161,161);
+
+        --c-background-color: rgb(0, 43, 54);
+        --c-background-highlights: rgb(7, 54, 66);
+
+        --c-yellow: rgb(181,137,  0);
+        --c-orange: rgb(203, 75, 22);
+        --c-red: rgb(220, 50, 47);
+        --c-magenta: rgb(211, 54,130);
+        --c-violet: rgb(108,113,196);
+        --c-blue: rgb(38,139,210);
+        --c-cyan: rgb(42,161,152);
+        --c-green: rgb(133,153,0);
+      }
+
+      /* Task 2.1 */
+      html {
+        background-color: rgb(0, 43, 54);
+      }
+      /* Task 2.2 */
+      header, 
+      footer {
+        background-color: rgb(7, 54, 66);
+      }
+      /* Task 2.3 */
+      main,
+      footer,
+      header {
+        color: rgb(131,148,150);
+      }
+
+      /* Task 2.4 - Links to Magenta */
+      aside a {
+        color: rgb(211, 54,130);
+      }
+
+      /* Task 2.5 - Mouse hover over link is highlighted in orange */
+
+      a:hover { 
+        color: rgb(203, 75, 22);
+      }
+
+      div {
+        border: solid 3px rgb(42,161,152);
+  
+      }
+
+      /* Task 2.7  */
+      header {
+        text-align: center;
+        font-size: 150%;
+        color: rgb(181,137,  0);
+      }
+      /* Task 2.8 and Task 2.9 */
+      nav ul {
+        list-style: none;
+        display:flex;
+        justify-content:space-evenly;
+        
+      }
+
+      nav a {
+        text-decoration: none;
+        color: rgb(15, 33, 141);
+      }
+
+      /* Task 2.10 - change aside to green */
+      aside h2, li {
+        color: rgb(133,153,0);
+      }
+
+      aside a {
+        color: rgb(220, 50, 47);
+      }
+
+      body {
+        max-width: 800px;
+      }
+
+      h1, h2, h3 {
+        padding-top: 50px;
+      }
+
+      main {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      main aside {
+        margin: 0px 25px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="https://www.home-reviews.com">Home</a></li>
+        <li><a href="https://blog.hubspot.com/marketing/creative-agency-team-pages">Our team</a></li>
+        <li><a href="https://www.infrastructureaustralia.gov.au/projects">Projects</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Contact_(1997_American_film)">Contact</a></li>
+      </ul>
+
+       <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+       <form>
+         <input type="search" name="q" placeholder="Search query">
+         <input type="submit" value="Go!">
+       </form>
+     </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+
+      <!-- It contains an article -->
+      <article>
+        <h2>Article heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+        <!-- Create div to separate articles from Main heading -->
+        <div>
+         
+          <h3>Subsection</h3>
+
+          <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+          <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+        </div>
+
+        <div>
+          <h3>Another subsection</h3>
+
+          <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+  
+          <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+        </div>
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+      <aside>
+        <h2>Related</h2>
+        <ul>
+          <li><a href="https://www.theurbanlist.com/sydney/a-list/best-beach-towns-nsw">Oh I do like to be beside the seaside</a></li>
+          <li><a href="https://www.gq.com.au/lifestyle/travel/worlds-best-beaches-2022/image-gallery/e2715cbdf7b9c622b0d0955cedf5c6c0">Oh I do like to be beside the sea</a></li>
+          <li><a href="https://www.visitbritain.com/au/en/england/northern-england">Although in the North of England</a></li>
+          <li><a href="https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/regional-climates/north-west-england--isle-of-man_-climate---met-office.pdf">It never stops raining</a></li>
+          <li><a href="https://www.google.com/">Oh well...</a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
+  </body>
+</html>
